@@ -12,6 +12,7 @@
 :root{
     --gray:rgb(34,34,34);
     --lightgray: rgb(74,74,74);
+    --skyblue: rgb(81,153,247);
 }
 
 /* GENERICS */
@@ -27,8 +28,17 @@ button{
     cursor: pointer;
 }
 
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .flex{
     display: flex;
+}
+
+.debug{
+    border: 1px dashed white;
 }
 
 /* HEADER */
@@ -55,10 +65,78 @@ header button:hover{
 }
 
 /* MAIN SECTION */
+
 main{
     height: calc(100vh - 180px);
     overflow-y: auto;
 }
+
+.row{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    padding: 5px 2.5px;
+    flex-shrink: 0;
+    
+}
+
+/* CARD */
+
+.card{
+    cursor: pointer;
+    position: relative;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.randompic{
+    max-width: 100%;
+    display: block;
+}
+
+.status{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card .username{
+    font-weight: bold;
+}
+
+.options{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+}
+
+.card button{
+    background-color: var(--skyblue);
+    font-size: 10px;
+    height: 16px;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-left: 2px;
+}
+
+.options .settings{
+    display: inline-block;
+    width: 16px;
+}
+
+.card:hover{
+    border: 2px solid goldenrod;
+}
+
+.card:hover .options{
+    display: block;
+}
+
 
 /* SCROLLBAR STYLE */
 
