@@ -13,6 +13,7 @@
     --gray:rgb(34,34,34);
     --lightgray: rgb(74,74,74);
     --skyblue: rgb(81,153,247);
+    --green: rgb(75,200,0);
 }
 
 /* GENERICS */
@@ -40,6 +41,13 @@ button{
 .debug{
     border: 1px dashed white;
 }
+
+/* UTILS */
+
+.green {
+    color: var(--green);
+}
+
 
 /* HEADER */
 
@@ -164,4 +172,44 @@ main{
 footer{
     height: 100px;
     background-color: var(--gray);
+}
+
+.bottom-menu {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-menu button{
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+.bottom-menu i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.bottom-menu button:hover{
+    text-shadow: 0 0 5px white;
+}
+
+.bottom-menu .fa-angle-up{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bottom-menu > *{
+    padding: 10px;
+}
+
+.right-menu{
+    background-color: var(--lightgray);
+    height: 100%;
+    align-items: center;
+}
+
+.right-menu button{
+    color: red;
 }
