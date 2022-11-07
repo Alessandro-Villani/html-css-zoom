@@ -5,3 +5,58 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/* CUSTOM PROPERTIES */
+
+:root{
+    --gray:rgb(34,34,34);
+    --lightgray: rgb(74,74,74);
+}
+
+/* GENERICS */
+
+body{
+    color: white;
+    background-color: black;
+}
+
+/* HEADER */
+
+header{
+    height: 80px;
+}
+
+/* MAIN SECTION */
+main{
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+/* SCROLLBAR STYLE */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--gray);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--lightgray);
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar-button{
+    background-color: var(--lightgray);
+    color: var(--gray);
+    border: 1px solid black;
+}
+
+/* FOOTER */
+
+footer{
+    height: 100px;
+    background-color: var(--gray);
+}
