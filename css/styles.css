@@ -21,10 +21,37 @@ body{
     background-color: black;
 }
 
+button{
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
 /* HEADER */
 
 header{
     height: 80px;
+    padding: 5px;
+}
+
+.buttons{
+    text-align: end;
+}
+
+header button{
+    background-color: var(--lightgray);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+header button:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 5px white;
 }
 
 /* MAIN SECTION */
