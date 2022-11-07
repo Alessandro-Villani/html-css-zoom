@@ -172,14 +172,14 @@ main{
 footer{
     height: 100px;
     background-color: var(--gray);
+    overflow-y: auto;
 }
 
 .bottom-menu {
     height: 100%;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
-}
+    }
 
 .bottom-menu button{
     background-color: transparent;
@@ -213,3 +213,4 @@ footer{
 .right-menu button{
     color: red;
 }
+
